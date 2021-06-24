@@ -160,10 +160,11 @@ namespace AnagramSolver
 
             Console.Write("Enter maximum length of words to be generated: ");
             int maxWordLength = Int32.Parse(Console.ReadLine().Trim());
-
+            
+            Console.WriteLine("Generating dictionary of words...");
             AnagramSolver anagramSolver = new AnagramSolver("C:/Users/14403/Desktop/C#/AnagramSolver/words_alpha.txt",minWordLength,maxWordLength);
-
-            Console.Write("Enter input for Anagrams as a single string: ");
+            
+            Console.Write("Done generating dictionary \n Enter input for Anagrams as a single string: ");
             string inputStr = Console.ReadLine();
             
             inputStr = SortString(inputStr);
